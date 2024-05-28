@@ -1,0 +1,40 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Sync Documents
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Sync Documents
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+      - run: npm install
+      - run: sed -i "s/BUILDCOMMIT/$(date)/g" docusaurus.config.js
+      - run: npm run build
+
+      - name: 📂 Sync Files
+        uses: SamKirkland/web-deploy@v1
+        with:
+          target-server: ${{ secrets.FTP_SERVER_IP }}
+          remote-user: ${{ secrets.FTP_SERVER_USERNAME }}
+          private-ssh-key: ${{ secrets.FTP_SERVER_PASSWD }}
+          destination-path: /www/wwwroot/docs.avaota.fun/
+          source-path: ${{ github.workspace }}/build/
+          rsync-options: --archive -O --no-perms --compress --human-readable --progress --delete-after --exclude=.git* --exclude=.well-known/ --exclude=.git/ --exclude=.gitignore
