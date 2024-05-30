@@ -94,7 +94,7 @@ cmake -DCMAKE_BOARD_FILE={Board_config_file.cmake} -DCMAKE_BUILD_TYPE=Debug ..
 - Trace
 
 ```
-xxxxxxxxxx cmake -DCMAKE_BOARD_FILE={Board_config_file.cmake} -DCMAKE_BUILD_TYPE=Trace ..
+cmake -DCMAKE_BOARD_FILE={Board_config_file.cmake} -DCMAKE_BUILD_TYPE=Trace ..
 ```
 
 他会根据选择的等级，选择输出的调试信息。
