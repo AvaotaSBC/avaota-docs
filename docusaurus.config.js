@@ -75,25 +75,19 @@ const config = {
             position: 'left',
             label: 'AvaotaOS 开发手册',
           },
-          {
-            type: 'docSidebar',
-            sidebarId: 'driverManualSidebar',
-            position: 'left',
-            label: 'BSP 驱动文档',
-          },
-		  {
+		      {
             type: 'docSidebar',
             sidebarId: 'androidSidebar',
             position: 'left',
             label: 'Android 开发文档',
           },
-		  {
+		      {
             type: 'docSidebar',
             sidebarId: 'ampSidebar',
             position: 'left',
             label: 'AMP 异构开发',
           },
-		  {
+		      {
             type: 'docSidebar',
             sidebarId: 'communitySidebar',
             position: 'left',
