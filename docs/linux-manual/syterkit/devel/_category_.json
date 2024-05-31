@@ -1,7 +1,7 @@
 {
   "label": "SyterKit API",
   "position": 2,
-  "collapsed": true,
+  "collapsed": false,
   "link": {
     "type": "generated-index",
   }
