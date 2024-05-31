@@ -42,7 +42,7 @@ typedef struct {
 
 ## API 接口
 
-## sunxi_spi_init
+### sunxi_spi_init
 
 ```c
 int sunxi_spi_init(sunxi_spi_t *spi);
@@ -53,7 +53,7 @@ int sunxi_spi_init(sunxi_spi_t *spi);
 - `spi`：指向Sunxi SPI控制器结构的指针。
 - 返回值：如果成功，则返回0；如果失败，则返回错误代码。
 
-## sunxi_spi_disable
+### sunxi_spi_disable
 
 ```c
 void sunxi_spi_disable(sunxi_spi_t *spi);
@@ -63,7 +63,7 @@ void sunxi_spi_disable(sunxi_spi_t *spi);
 
 - `spi`：指向Sunxi SPI控制器结构的指针。
 
-## sunxi_spi_transfer
+### sunxi_spi_transfer
 
 ```c
 int sunxi_spi_transfer(sunxi_spi_t *spi, spi_io_mode_t mode, void *txbuf, uint32_t txlen, void *rxbuf, uint32_t rxlen);
@@ -110,6 +110,24 @@ if (sunxi_spi_init(&sunxi_spi0_lcd) != 0) {
 ```c
 if (sunxi_spi_transfer(&sunxi_spi0_lcd, SPI_IO_SINGLE, tx, 1, 0, 0) < 0)
     printk_error("SPI: SPI Xfer error!\n");
+```
+
+如果是特殊域的SPI设备，可以定义其时钟地址，例如这里的在 CPUS 域中的 SPI 控制器
+
+```c
+sunxi_spi_t sunxi_spi0_lcd = {
+        .base = SUNXI_R_SPI_BASE,
+        .clk_reg = {
+                .ccu_base = SUNXI_R_PRCM_BASE,
+                .spi_clk_reg_offest = SUNXI_S_SPI_CLK_REG,
+                .spi_bgr_reg_offset = SUNXI_S_SPI_BGR_REG,
+        },
+        .id = 0,
+        .clk_rate = 75 * 1000 * 1000,
+        .gpio_cs = {GPIO_PIN(GPIO_PORTL, 10), GPIO_PERIPH_MUX6},
+        .gpio_sck = {GPIO_PIN(GPIO_PORTL, 11), GPIO_PERIPH_MUX6},
+        .gpio_mosi = {GPIO_PIN(GPIO_PORTL, 12), GPIO_PERIPH_MUX6},
+};
 ```
 
 #### 使用 SPI 驱动 SPI LCD 屏
