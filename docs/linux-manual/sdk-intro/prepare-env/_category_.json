@@ -1,6 +1,6 @@
 {
-  "label": "BSP 驱动手册",
-  "position": 6,
+  "label": "自行构建 Avaota OS",
+  "position": 1,
   "collapsed": false,
   "link": {
     "type": "generated-index",
