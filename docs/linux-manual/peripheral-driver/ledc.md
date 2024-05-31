@@ -122,6 +122,8 @@ echo 255 > /sys/class/leds/sunxi_led0b/brightness
 #include <sys/types.h>
 #include <unistd.h>
 
+// 使用RGB 分量合成颜色值
+#define MERAGECOLOR(G, R, B) (((uint32_t)G << 16) | ((uint16_t)R << 8) | B)
 #define PIXEL_NUM 4
 
 int fd[PIXEL_NUM][3];// 存放文件描述符数组
