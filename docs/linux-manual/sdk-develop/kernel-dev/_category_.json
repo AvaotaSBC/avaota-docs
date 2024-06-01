@@ -1,6 +1,6 @@
 {
-  "label": "BSP 驱动手册",
-  "position": 3,
+  "label": "Avaota OS 内核开发",
+  "position": 2,
   "collapsed": false,
   "link": {
     "type": "generated-index",
