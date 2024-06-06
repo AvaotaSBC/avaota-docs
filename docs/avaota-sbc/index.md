@@ -23,3 +23,11 @@ Avaota A 系列提供中高端性能 SBC 体验，包括 PCIe、USB3.0、双千�
 Avaota C 系列提供中低端性能 SBC 体验，包括USB，网卡，HDMI等常用接口，Avaota C 系列主打轻量化设计，整版设计更为紧凑
 
 ![AvaotaC](assets/post/index/AvaotaC.jpg)
+
+### Avaota M 系列
+
+Avaota M 系列提供极致的核心板，包括邮票孔，BTB，连接器核心板。方便快速产品迭代开发。
+
+（下图演示为 Avaota M1，Avaota M 系列无固定形态，依据核心板功能而定）
+
+![AvaotaM1](assets/post/index/AvaotaM1.jpg)
