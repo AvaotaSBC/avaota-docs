@@ -2,7 +2,7 @@
 
 Avaota A1 使用的是 Allwinner 的 T527 SoC，其框图如下：
 
-![300793077-131a2982-c605-46f6-91cf-57d117b9a614](assets/post/soc-info/300793077-131a2982-c605-46f6-91cf-57d117b9a614.png)
+![image-20240606123235242](assets/post/soc-info/image-20240606123235242.png)
 
 ## 处理器（Processor）：
 
@@ -14,7 +14,7 @@ Avaota A1 使用的是 Allwinner 的 T527 SoC，其框图如下：
 
 ## 内存（Memory）：
 
-- 32位 LPDDR4/LPDDR4X 接口
+- 32位 DDR3/DDR3L/LPDDR3/DDR4/LPDDR4/LPDDR4X，最大支持 4GB （32Gb）内存
 - 支持 SD3.0/eMMC5.1 接口
 
 ## 视频引擎（Video Engine）：
@@ -64,3 +64,7 @@ Avaota A1 使用的是 Allwinner 的 T527 SoC，其框图如下：
 ## 封装（Package）：
 
 - HS-FCBGA 664balls封装，尺寸为17 mm x 17 mm，球距为0.5 mm，球径为0.3 mm
+
+## 设备区别（Device Difference）
+
+![image-20240606123347590](assets/post/soc-info/image-20240606123347590.png)
