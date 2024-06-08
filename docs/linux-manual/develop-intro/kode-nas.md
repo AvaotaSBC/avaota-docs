@@ -46,8 +46,4 @@
 
 ### 手动部署
 
-前往 https://kodcloud.com/download/ 下载程序包
-
-![image-20240602000542259](image-20240602000542259.png)
-
-然后上传部署即可。
+前往 https://kodcloud.com/download/ 下载程序包然后上传部署即可。
