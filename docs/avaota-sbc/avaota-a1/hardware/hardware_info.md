@@ -1,5 +1,15 @@
 # 硬件参数
 
+![ddc880cdba2657e3e5f40c80449955f](./assets/hardware_info/ddc880cdba2657e3e5f40c80449955f.jpg)
+
+![ee0b7d04befc6512580e5720b3030cc](./assets/hardware_info/ee0b7d04befc6512580e5720b3030cc.jpg)
+
+![d1c5f4322ed84d9d6ec4a020c330884](./assets/hardware_info/d1c5f4322ed84d9d6ec4a020c330884.jpg)
+
+![d13da8d7ca5b38d69c21b34fb0fc95f](./assets/hardware_info/d13da8d7ca5b38d69c21b34fb0fc95f.jpg)
+
+## 参数规格
+
 Avaota-A1 - A Powerful SBC with Allwinner T527 Octa-Core A55 SoC
 
 ![Avaota](./assets/post/hardware_info/316788623-1e4e7bca-a16f-469d-96ad-aa21b29acfbf.jpg)
