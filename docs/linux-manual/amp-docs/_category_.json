@@ -1,6 +1,6 @@
 {
-  "label": "NPU 开发",
-  "position": 9,
+  "label": "AMP 异构计算",
+  "position": 8,
   "collapsed": false,
   "link": {
     "type": "generated-index",
