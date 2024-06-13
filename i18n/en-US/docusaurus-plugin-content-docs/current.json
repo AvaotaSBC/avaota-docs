@@ -1,0 +1,118 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.avaotsbcSidebar.category.Avaota A1": {
+    "message": "Avaota A1",
+    "description": "The label for category Avaota A1 in sidebar avaotsbcSidebar"
+  },
+  "sidebar.avaotsbcSidebar.category.Avaota A1 开发板": {
+    "message": "Avaota A1",
+    "description": "The label for category Avaota A1 开发板 in sidebar avaotsbcSidebar"
+  },
+  "sidebar.avaotsbcSidebar.category.AvaotaOS": {
+    "message": "Avaota OS",
+    "description": "The label for category AvaotaOS in sidebar avaotsbcSidebar"
+  },
+  "sidebar.avaotsbcSidebar.category.第三方系统下载": {
+    "message": "3rd party system download",
+    "description": "The label for category 第三方系统下载 in sidebar avaotsbcSidebar"
+  },
+  "sidebar.avaotsbcSidebar.category.Android13": {
+    "message": "Android 13",
+    "description": "The label for category Android13 in sidebar avaotsbcSidebar"
+  },
+  "sidebar.avaotsbcSidebar.category.Armbian": {
+    "message": "Armbian",
+    "description": "The label for category Armbian in sidebar avaotsbcSidebar"
+  },
+  "sidebar.avaotsbcSidebar.category.Openwrt": {
+    "message": "Openrt",
+    "description": "The label for category Openwrt in sidebar avaotsbcSidebar"
+  },
+  "sidebar.avaotsbcSidebar.category.Avaota C1": {
+    "message": "Avaota C1",
+    "description": "The label for category Avaota C1 in sidebar avaotsbcSidebar"
+  },
+  "sidebar.avaotsbcSidebar.category.Avaota C1 开发板": {
+    "message": "Avaota C1 Development Board",
+    "description": "The label for category Avaota C1 开发板 in sidebar avaotsbcSidebar"
+  },
+  "sidebar.avaotsbcSidebar.category.Avaota Debugger": {
+    "message": "Avaota Debugger",
+    "description": "The label for category Avaota Debugger in sidebar avaotsbcSidebar"
+  },
+  "sidebar.linuxManualSidebar.category.Avaota OS 使用入门": {
+    "message": "Get started with Avaota OS",
+    "description": "The label for category Avaota OS 使用入门 in sidebar linuxManualSidebar"
+  },
+  "sidebar.linuxManualSidebar.category.Avaota OS 开发入门": {
+    "message": "Beginning of Avaota OS Development",
+    "description": "The label for category Avaota OS 开发入门 in sidebar linuxManualSidebar"
+  },
+  "sidebar.linuxManualSidebar.category.外设驱动教程": {
+    "message": "External Drive Tutorial",
+    "description": "The label for category 外设驱动教程 in sidebar linuxManualSidebar"
+  },
+  "sidebar.linuxManualSidebar.category.Avaota OS 开发进阶": {
+    "message": "Avaota OS Developments",
+    "description": "The label for category Avaota OS 开发进阶 in sidebar linuxManualSidebar"
+  },
+  "sidebar.linuxManualSidebar.category.自行构建 Avaota OS": {
+    "message": "Build Avaota OS on your own",
+    "description": "The label for category 自行构建 Avaota OS in sidebar linuxManualSidebar"
+  },
+  "sidebar.linuxManualSidebar.category.Avaota OS 内核开发": {
+    "message": "Avaota OS kernel development",
+    "description": "The label for category Avaota OS 内核开发 in sidebar linuxManualSidebar"
+  },
+  "sidebar.linuxManualSidebar.category.BSP 驱动手册": {
+    "message": "BSP Drivers Manual",
+    "description": "The label for category BSP 驱动手册 in sidebar linuxManualSidebar"
+  },
+  "sidebar.linuxManualSidebar.category.SyterKit 开发": {
+    "message": "SyterKit Development",
+    "description": "The label for category SyterKit 开发 in sidebar linuxManualSidebar"
+  },
+  "sidebar.linuxManualSidebar.category.SyterKit API": {
+    "message": "SyterKit API",
+    "description": "The label for category SyterKit API in sidebar linuxManualSidebar"
+  },
+  "sidebar.linuxManualSidebar.category.SyterKit 驱动": {
+    "message": "SyterKit Driver",
+    "description": "The label for category SyterKit 驱动 in sidebar linuxManualSidebar"
+  },
+  "sidebar.linuxManualSidebar.category.AMP 异构计算": {
+    "message": "AMP isomers calculation",
+    "description": "The label for category AMP 异构计算 in sidebar linuxManualSidebar"
+  },
+  "sidebar.linuxManualSidebar.category.AMP 异构开发": {
+    "message": "AMP isomer development",
+    "description": "The label for category AMP 异构开发 in sidebar linuxManualSidebar"
+  },
+  "sidebar.linuxManualSidebar.category.RTOS HAL 模块驱动": {
+    "message": "RTOS HAL Module Driver",
+    "description": "The label for category RTOS HAL 模块驱动 in sidebar linuxManualSidebar"
+  },
+  "sidebar.linuxManualSidebar.category.NPU 开发": {
+    "message": "NPU Development",
+    "description": "The label for category NPU 开发 in sidebar linuxManualSidebar"
+  },
+  "sidebar.communitySidebar.category.Avaota A1": {
+    "message": "Avaota A1",
+    "description": "The label for category Avaota A1 in sidebar communitySidebar"
+  },
+  "sidebar.androidSidebar.category.Android 入门": {
+    "message": "Android Gadget",
+    "description": "The label for category Android 入门 in sidebar androidSidebar"
+  },
+  "sidebar.androidSidebar.category.Android 开发入门": {
+    "message": "Get Started with Android",
+    "description": "The label for category Android 开发入门 in sidebar androidSidebar"
+  },
+  "sidebar.androidSidebar.category.Android 开发案例": {
+    "message": "Android Development Case",
+    "description": "The label for category Android 开发案例 in sidebar androidSidebar"
+  }
+}

@@ -1,0 +1,12 @@
+project_id: '685244'
+api_token: '674f4fe7bd64f2e0ba9b78ed92e2671db3db58248719d76397c8f9b08a71566669449e16f97ed90d'
+preserve_hierarchy: true
+export_only_approved: true
+files:
+  # JSON translation files
+  - source: /i18n/en-US/**/*
+    translation: /i18n/%locale%/**/%original_file_name%
+  # Docs avaota-sbc Markdown files
+  - source: /docs/avaota-sbc/**/*
+    translation: /i18n/%locale%/docusaurus-plugin-content-docs/current/avaota-sbc/**/%original_file_name%
+    ignore: ['/**/*.jpg', '/**/*.png', '/**/*.jpeg', '/**/*.docx', '/**/*.json']

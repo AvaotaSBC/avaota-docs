@@ -26,12 +26,17 @@ const config = {
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
 
-    // Even if you don't use internationalization, you can use this field to set
-    // useful metadata like html lang. For example, if your site is Chinese, you
-    // may want to replace "en" with "zh-Hans".
     i18n: {
-        defaultLocale: 'zh-Hans',
-        locales: ['zh-Hans', 'en'],
+        defaultLocale: 'zh-CN',
+        locales: ['zh-CN', 'en-US'],
+        localeConfigs: {
+            'en-US': {
+                label: 'English',
+            },
+            'zh-CN': {
+                label: '简体中文',
+            },
+        },
     },
 
     presets: [
@@ -96,6 +101,12 @@ const config = {
                     {
                         type: 'localeDropdown',
                         position: 'right',
+                        dropdownItemsAfter: [
+                            {
+                                to: 'https://crowdin.com/project/docsavaotafun',
+                                label: 'Help Us Translate',
+                            },
+                        ],
                     },
                 ],
             },

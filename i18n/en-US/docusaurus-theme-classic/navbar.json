@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "Avaota SBC",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Avaota SBC",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Avaota SBC 文档": {
+    "message": "Avaota SBC",
+    "description": "Navbar item with label Avaota SBC 文档"
+  },
+  "item.label.AvaotaOS 开发手册": {
+    "message": "Avaota OS",
+    "description": "Navbar item with label AvaotaOS 开发手册"
+  },
+  "item.label.Android 开发文档": {
+    "message": "Android",
+    "description": "Navbar item with label Android 开发文档"
+  },
+  "item.label.Avaota 社区教程": {
+    "message": "Avaota Community",
+    "description": "Navbar item with label Avaota 社区教程"
+  },
+  "item.label.Buildroot 教程": {
+    "message": "Buildroot",
+    "description": "Navbar item with label Buildroot 教程"
+  }
+}
