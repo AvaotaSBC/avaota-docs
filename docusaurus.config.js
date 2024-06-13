@@ -103,6 +103,10 @@ const config = {
                         position: 'right',
                         dropdownItemsAfter: [
                             {
+                                type: 'html',
+                                value: '<hr style="margin: 0.3rem 0;">',
+                            },
+                            {
                                 to: 'https://crowdin.com/project/docsavaotafun',
                                 label: 'Help Us Translate',
                             },
