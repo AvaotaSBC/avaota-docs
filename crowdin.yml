@@ -1,4 +1,5 @@
 project_id: '685244'
+# Token is place hold for ENV
 api_token: '674f4fe7bd64f2e0ba9b78ed92e2671db3db58248719d76397c8f9b08a71566669449e16f97ed90d'
 preserve_hierarchy: true
 export_only_approved: true
