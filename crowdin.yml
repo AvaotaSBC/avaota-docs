@@ -8,6 +8,18 @@ files:
     translation: /i18n/%locale%/**/%original_file_name%
     ignore: ['/**/*.jpg', '/**/*.png', '/**/*.jpeg', '/**/*.docx', '/**/*.md', '/**/current/*']
   # Docs avaota-sbc Markdown files
-  - source: /docs/**/*
-    translation: /i18n/%locale%/docusaurus-plugin-content-docs/current/**/%original_file_name%
+  - source: /docs/avaota-sbc/**/*
+    translation: /i18n/%locale%/docusaurus-plugin-content-docs/current/avaota-sbc/**/%original_file_name%
+    ignore: ['/**/*.jpg', '/**/*.png', '/**/*.jpeg', '/**/*.docx', '/**/*.json']
+  # Docs avaotaos Markdown files
+  - source: /docs/linux-manual/avaotaos/**/*
+    translation: /i18n/%locale%/docusaurus-plugin-content-docs/current/linux-manual/avaotaos/**/%original_file_name%
+    ignore: ['/**/*.jpg', '/**/*.png', '/**/*.jpeg', '/**/*.docx', '/**/*.json']
+  # Docs avaotaos Markdown files
+  - source: /docs/linux-manual/sdk-develop/kernel-dev/**/*
+    translation: /i18n/%locale%/docusaurus-plugin-content-docs/current/linux-manual/sdk-develop/kernel-dev/**/%original_file_name%
+    ignore: ['/**/*.jpg', '/**/*.png', '/**/*.jpeg', '/**/*.docx', '/**/*.json']
+  # Docs avaotaos Markdown files
+  - source: /docs/linux-manual/sdk-develop/prepare-env/**/*
+    translation: /i18n/%locale%/docusaurus-plugin-content-docs/current/linux-manual/sdk-develop/prepare-env/**/%original_file_name%
     ignore: ['/**/*.jpg', '/**/*.png', '/**/*.jpeg', '/**/*.docx', '/**/*.json']
