@@ -1,6 +1,6 @@
 {
   "name": "avaota-docs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -12,6 +12,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
+    "download-translations": "crowdin download --config=crowdin.yml --export-only-approved --all",
     "crowdin": "crowdin"
   },
   "dependencies": {

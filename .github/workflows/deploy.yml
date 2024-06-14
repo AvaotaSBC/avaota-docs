@@ -45,8 +45,13 @@ jobs:
           node-version: 18
           cache: 'npm'
           cache-dependency-path: package-lock.json
+
       - run: npm install
+
       - run: sed -i "s/BUILDCOMMIT/$(date)/g" docusaurus.config.js
+
+      - run: npm run download-translations
+      
       - run: npm run build
 
       - name: 📂 Sync Files
