@@ -35,8 +35,6 @@ E: Unable to locate package zlib1g-dev:i386
 E: Unable to locate package linux-libc-dev:i386
 ```
 
-![image-20240522215708617](C:\Users\gloom\AppData\Roaming\Typora\typora-user-images\image-20240522215708617.png)
-
 请安装 i386 支持，如下：
 
 ```
