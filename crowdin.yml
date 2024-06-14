@@ -6,7 +6,7 @@ files:
   # JSON translation files
   - source: /i18n/en-US/**/*
     translation: /i18n/%locale%/**/%original_file_name%
-    ignore: ['/**/*.jpg', '/**/*.png', '/**/*.jpeg', '/**/*.docx', '/**/*.md']
+    ignore: ['/**/*.jpg', '/**/*.png', '/**/*.jpeg', '/**/*.docx', '/**/*.md', '/**/current/*']
   # Docs avaota-sbc Markdown files
   - source: /docs/**/*
     translation: /i18n/%locale%/docusaurus-plugin-content-docs/current/**/%original_file_name%
