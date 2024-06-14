@@ -20,6 +20,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Copy assets to translate
+        run: cp -ravf docs/* i18n/en-US/docusaurus-plugin-content-docs/current/
+
       - name: crowdin action
         uses: crowdin/github-action@v2
         with:
@@ -40,11 +43,14 @@ jobs:
           cache: 'npm'
           cache-dependency-path: package-lock.json
 
-      - run: npm install
+      - name: install nodejs package
+        run: npm install
 
-      - run: sed -i "s/BUILDCOMMIT/$(date)/g" docusaurus.config.js
+      - name: set BUILDCOMMIT date
+        run: sed -i "s/BUILDCOMMIT/$(date)/g" docusaurus.config.js
 
-      - run: npm run build
+      - name: bake doc
+        run: npm run build
 
       - name: 📂 Sync Files
         uses: SamKirkland/web-deploy@v1
