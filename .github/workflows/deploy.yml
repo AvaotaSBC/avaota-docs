@@ -12,12 +12,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  synchronize-with-crowdin:
+  deploy:
+    name: Sync Documents
     runs-on: ubuntu-latest
-
+    needs: [synchronize-with-crowdin]
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -27,18 +27,11 @@ jobs:
           config: "crowdin.yml"
           upload_sources: true
           upload_sources_args: "--delete-obsolete"
+          download_translations: true
+          export_only_approved: true
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN_KEY }}
-
-  deploy:
-    name: Sync Documents
-    runs-on: ubuntu-latest
-    needs: [synchronize-with-crowdin]
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -50,8 +43,6 @@ jobs:
 
       - run: sed -i "s/BUILDCOMMIT/$(date)/g" docusaurus.config.js
 
-      - run: npm run download-translations
-      
       - run: npm run build
 
       - name: 📂 Sync Files
