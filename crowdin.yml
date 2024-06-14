@@ -1,4 +1,4 @@
-project_id: '685244'
+project_id: CROWDIN_PROJECT_ID
 api_token_env: CROWDIN_PERSONAL_TOKEN
 preserve_hierarchy: true
 export_only_approved: true
