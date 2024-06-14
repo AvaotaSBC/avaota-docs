@@ -20,6 +20,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: create translate assets
+        run: mkdir -p i18n/en-US/docusaurus-plugin-content-docs/current/
+
       - name: Copy assets to translate
         run: cp -ravf docs/* i18n/en-US/docusaurus-plugin-content-docs/current/
 
