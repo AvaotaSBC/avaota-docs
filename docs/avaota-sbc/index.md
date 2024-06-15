@@ -55,3 +55,8 @@ CERN Open Hardware Licence Version 2 - Weakly Reciprocal许可证为硬件设计
 :::
 
 ![AvaotaM1](assets/post/index/AvaotaM1.jpg)
+
+### Avaota 配件系列
+
+Avaota 配件系列提供基础外设配套配件，包括调试器，修改工具，模块等。
+
