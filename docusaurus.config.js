@@ -112,6 +112,12 @@ const config = {
                             },
                         ],
                     },
+                    {
+                        href: 'https://github.com/AvaotaSBC',
+                        position: 'right',
+                        className: 'header-github-link',
+                        'aria-label': 'GitHub repository',
+                    },
                 ],
             },
             footer: {
