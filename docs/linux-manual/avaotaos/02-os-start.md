@@ -1,22 +1,10 @@
-# 系统启动
+# 系统启动常见问题
 
-## 启动设备
+## 板载 SPI 屏幕显示：WARN: Open file fail, filename xxx
 
-- 用户名 : `avaota`
-- 密码  :  `avaota`
+![image-20240615114246263](assets/post/02-os-start/image-20240615114246263.png)
 
-![登录入系统](assets/02-os-start/image-20240512143435067.png)
-
-**可以使用 ``` sudo nmtui ``` 连接 WIFI , 或者直接连接 *以太网* 。**
-
-### 使用串口登录
-
-- 登录使用波特率 ：```115200```
-
-![配置串口](assets/02-os-start/image-20240512165001989.png)
-
-![加载内核](assets/02-os-start/image-20240512164834235.png)
-
-![系统信息](assets/02-os-start/image-20240512165604518.png)
-
-## 
+这是读取启动必备的文件失败，，在图中是读取内核 `Image` 失败考虑
+1. 读取的文件损坏
+2. TF卡通讯失败
+3. 烧写错误

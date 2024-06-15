@@ -36,15 +36,6 @@ Avaota OS是基于Ubuntu的特殊定制版，专为Avaota单板计算机（SBC�
 
 ## Avaota OS 下载地址
 
-### 稳定版下载地址
-
-- Avaota OS v0.1.5
-
-| 文件名                                      | 下载地址                                                     |
-| ------------------------------------------- | ------------------------------------------------------------ |
-| ubuntu-jammy-cli-aarch64-avaota-a1.img.xz   | https://github.com/AvaotaSBC/AvaotaOS/releases/download/20240519-0907/ubuntu-jammy-cli-aarch64-avaota-a1.img.xz |
-| ubuntu-jammy-gnome-aarch64-avaota-a1.img.xz | https://github.com/AvaotaSBC/AvaotaOS/releases/download/20240519-0907/ubuntu-jammy-gnome-aarch64-avaota-a1.img.xz |
-
 ### Nightly 每日更新版
 
 - 前往 Release 下载：https://github.com/AvaotaSBC/AvaotaOS/releases
