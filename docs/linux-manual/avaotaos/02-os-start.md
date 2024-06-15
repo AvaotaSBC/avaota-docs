@@ -8,3 +8,4 @@
 1. 读取的文件损坏
 2. TF卡通讯失败
 3. 烧写错误
+4. SDHCI驱动不完善，不支持某些品牌卡，可以来帮助优化驱动：https://github.com/YuzukiHD/SyterKit/blob/main/src/drivers/sys-sdhci.c
