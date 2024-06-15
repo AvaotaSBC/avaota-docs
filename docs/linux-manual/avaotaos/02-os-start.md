@@ -9,3 +9,9 @@
 2. TF卡通讯失败
 3. 烧写错误
 4. SDHCI驱动不完善，不支持某些品牌卡，可以来帮助优化驱动：https://github.com/YuzukiHD/SyterKit/blob/main/src/drivers/sys-sdhci.c
+
+解决方法：
+
+1. 重新格式化存储卡并且烧录固件
+2. 拔插储存卡测试是否启动
+3. 更换储存卡
