@@ -277,6 +277,32 @@ sudo apt install libc6:i386 libstdc++6:i386 lib32z1
 sudo apt install qemu-user-static
 ```
 
+### 配置虚拟化工具
+
+:::info
+
+一般只有使用 WSL2 编译时需要如下配置，非则会出现：` Exec format error`
+
+:::
+
+检查一下当前 binfmts 的 aarch64 配置
+
+```
+update-binfmts --display qemu-aarch64
+```
+
+![image-20240615132455025](assets/post/01-prepare-env/image-20240615132455025.png)
+
+如果显示 `disabled` 请手动开启
+
+```
+sudo update-binfmts --import qemu-aarch64
+```
+
+开启后再次查看为 `enabled`
+
+![image-20240615132548469](assets/post/01-prepare-env/image-20240615132548469.png)
+
 ## 检查安装是否完成
 
 :::info
