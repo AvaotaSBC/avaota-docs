@@ -48,7 +48,7 @@ Avaota M 系列提供极致的核心板，包括邮票孔，BTB，连接器核�
 
 Avaota M 系列采用 [CERN-OHL-W](https://cern-ohl.web.cern.ch/) 开源许可。
 
-CERN Open Hardware Licence Version 2（CERN开放硬件许可证第2版）是一个弱相互许可证，这意味着它要求使用该许可证的人在发布修改或衍生作品时，必须以相同的许可证类型（即CERN Open Hardware Licence）进行分发。然而，与强相互许可证不同，该许可证允许使用人在某些情况下选择其他许可证进行分发，但需遵守一些特定条件。
+CERN Open Hardware Licence Version 2 - Weakly Reciprocal 是一个弱相互许可证，这意味着它要求使用该许可证的人在发布修改或衍生作品时，必须以相同的许可证类型（即CERN Open Hardware Licence）进行分发。然而，与强相互许可证不同，该许可证允许使用人在某些情况下选择其他许可证进行分发，但需遵守一些特定条件。
 
 CERN Open Hardware Licence Version 2 - Weakly Reciprocal许可证为硬件设计师提供了一种方便的方式来共享他们的工作，并鼓励使用人对设计进行改进、修改和再利用。它鼓励合作、创新和知识共享，以推动硬件领域的发展。同时，该许可证也保护了原始设计者的权益，确保他们的工作得到适当的认可和尊重。
 
