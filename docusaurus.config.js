@@ -122,6 +122,14 @@ const config = {
                 theme: prismThemes.github,
                 darkTheme: prismThemes.dracula,
             },
+            algolia: {
+                appId: '48O7DQDPJM',
+                apiKey: '6917f76a781efafd4d33d26cd5100862',
+                indexName: 'avaota',
+                contextualSearch: true,
+                searchPagePath: 'search',
+                insights: false,
+            },
         }),
 };
 
