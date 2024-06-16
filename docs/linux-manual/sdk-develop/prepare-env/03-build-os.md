@@ -61,20 +61,50 @@ import AsciinemaWidget from '/src/components/AsciinemaWidget';
 AvaotaOS 的编译命令的格式如下：
 
 ```bash
-sudo bash build_all.sh -b <BOARD> -v <UBUNTU_VERSION> -a <ARCH> -t <SYS_TYPE>
+sudo ./build_all.sh \
+    -b <BOARD> \
+    -m <MIRROR> \
+    -v <SYSTEM_DISTRO> \
+    -t <SYS_TYPE> \
+    -u <SYS_USER> \
+    -p <USER_PASSWORD> \
+    -s <ROOT_PASSWORD> \
+    -k <IF_MENUCONFIG> \
+    -i <GITHUB_MIRROR> \
+    -o <KERNEL_ONLY> \
+    -e <USE_CCACHE>
 ```
 
 其中，各个选项的含义如下：
 
 - `<BOARD>`：指定要编译的目标板型，例如 `avaota-a1`。
-- `<UBUNTU_VERSION>`：指定 Ubuntu 版本，可选值为 `jammy`（Ubuntu 22.04）或者 `noble`（Ubuntu 24.04）。
-- `<ARCH>`：指定架构，可选值为 `aarch64`（arm64）或者 `armhf`（armhf）。
+- `<MIRROR>`：指定镜像站，例如 `https://mirrors.ustc.edu.cn/ubuntu-ports`。
+- `<SYSTEM_DISTRO>`：指定发行版版本，可选值为 `jammy`（Ubuntu 22.04）或者 `noble`（Ubuntu 24.04）以及 `bookworm`（Debian 12）。
 - `<SYS_TYPE>`：指定系统类型，可选值包括 `cli`、`xfce`、`gnome`、`kde`、`lxqt`等。
+- `<SYS_USER>`：指定系统普通用户用户名。
+- `<USER_PASSWORD>`：指定系统普通用户密码。
+- `<ROOT_PASSWORD>`：指定 root 用户密码。
+- `<IF_MENUCONFIG>`：指定是否运行内核配置界面（make menuconfig），可选值包括 `yes`、`no`。
+- `<GITHUB_MIRROR>`：指定是否使用 GitHub 代理，例如 `https://mirror.ghproxy.com`。（无论是否指定，第一次代码拉取失败则会从 Gitee 拉取）
+- `<KERNEL_ONLY>`：指定是否只编译内核包，可选值包括 `yes`、`no`。
+- `<USE_CCACHE>`：指定是否使用 `ccache`，可选值包括 `yes`、`no`。
 
-例如，要编译 `avaota-a1` 板型，Ubuntu 22.04，架构为 `aarch64`，系统类型为 `cli`，命令格式如下：
+
+例如，要编译 `avaota-a1` 板型，Ubuntu 22.04，系统类型为 `cli`，命令格式如下：
 
 ```bash
-sudo bash build_all.sh -b avaota-a1 -v jammy -a aarch64 -t cli
+sudo bash build_all.sh \
+    -b avaota-a1 \
+    -m https://mirrors.ustc.edu.cn/ubuntu-ports \
+    -v jammy \
+    -t cli \
+    -u avaota \
+    -p avaota \
+    -s avaota \
+    -k no \
+    -i no \
+    -o no \
+    -e no
 ```
 
 这样的命令将会使用 `build_all.sh` 脚本进行编译，编译出符合指定要求的系统镜像。编译需要网络连接，依照网络性能和电脑性能大约需要10分钟~120分钟。
@@ -83,22 +113,55 @@ sudo bash build_all.sh -b avaota-a1 -v jammy -a aarch64 -t cli
 
 ### 命令举例
 
-1. 编译 `avaota-a1` 板型，Ubuntu 24.04，架构为 `armhf`，系统类型为 `xfce`：
+1. 编译 `avaota-a1` 板型，Ubuntu 24.04，从中科大镜像站构建根目录，系统类型为 `xfce`：
 
 ```bash
-sudo bash build_all.sh -b avaota-a1 -v noble -a armhf -t xfce
+sudo bash build_all.sh \
+    -b avaota-a1 \
+    -m https://mirrors.ustc.edu.cn/ubuntu-ports \
+    -v jammy \
+    -t xfce \
+    -u avaota \
+    -p avaota \
+    -s avaota \
+    -k no \
+    -i no \
+    -o no \
+    -e no
 ```
 
-2. 编译 `avaota-a1` 板型，Ubuntu 22.04，架构为 `aarch64`，系统类型为 `gnome`：
+2. 编译 `avaota-a1` 板型，Ubuntu 24.04，从中科大镜像站构建根目录，系统类型为 `gnome`：
 
 ```bash
-sudo bash build_all.sh -b avaota-a1 -v jammy -a aarch64 -t gnome
+sudo bash build_all.sh \
+    -b avaota-a1 \
+    -m https://mirrors.ustc.edu.cn/ubuntu-ports \
+    -v jammy \
+    -t gnome \
+    -u avaota \
+    -p avaota \
+    -s avaota \
+    -k no \
+    -i no \
+    -o no \
+    -e no
 ```
 
-3. 编译 `avaota-a1` 板型，Ubuntu 24.04，架构为 `armhf`，系统类型为 `kde`：
+3. 编译 `avaota-a1` 板型，Debian bookworm，从中科大镜像站构建根目录，系统类型为 cli`：
 
 ```bash
-sudo bash build_all.sh -b avaota-a1 -v noble -a armhf -t kde
+sudo bash build_all.sh \
+    -b avaota-a1 \
+    -m https://mirrors.ustc.edu.cn/debian \
+    -v bookworm \
+    -t cli \
+    -u avaota \
+    -p avaota \
+    -s avaota \
+    -k no \
+    -i no \
+    -o no \
+    -e no
 ```
 
 ### 演示
