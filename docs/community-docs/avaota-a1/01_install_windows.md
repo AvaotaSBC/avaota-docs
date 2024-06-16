@@ -7,9 +7,6 @@
 
 
 - 使用感受 ：**网络支持不完善，开机关机30秒内可完成，无显卡驱动。流畅谈不上，但响应及时不是很卡。**
-  先上图，再说教程
-
-![系统信息](assets/01_install_windows/Win10-img1.png)
 
 - 网络也可通过 **KDNET** 内核调试来打开
 
@@ -113,9 +110,7 @@ sudo qemu-system-aarch64 \
 
 ![启动界面](assets/01_install_windows/Win10-img6.png)
 
-### 7. &nbsp;等待会就会进入 Win10 安装程序界面，跟着它的步骤做就行了，密钥可跳过或输入你选定版本的安装密钥，例如专业版的密钥：```W269N-WFGWX-YVC9B-4J6C9-T83GX ```
-
-![激活界面](assets/01_install_windows/Win10-img7.png)
+### 7. &nbsp;等待会就会进入 Win10 安装程序界面，跟着它的步骤做就行了，密钥可跳过
 
 ### 8. &nbsp;到这一步时是找不到磁盘的，需要安装磁盘驱动
 
