@@ -2,7 +2,7 @@
 
 ## 刷写到 TF 卡启动
 
-由于安卓镜像打包的特殊性，首先需要去下载原厂的TF卡烧卡芯片
+由于安卓镜像打包的特殊性，首先需要去下载原厂的TF卡烧卡软件
 
 前往 https://www.aw-ol.com/downloads?cat=5
 
@@ -50,7 +50,7 @@ TF卡插入开发板，即可从 TF 卡启动
 
 ## 刷写到 eMMC 启动
 
-由于安卓镜像打包的特殊性，首先需要去下载原厂的TF卡烧卡芯片
+由于安卓镜像打包的特殊性，首先需要去下载原厂的TF卡烧卡芯软件
 
 前往 https://www.aw-ol.com/downloads?cat=5
 
@@ -1249,5 +1249,568 @@ SUNXI_UPDATE_NEXT_ACTION_SHUTDOWN
 [108.954][mmc]: mmc 2 exit ok
 ```
 
+## 使用 USB 刷写固件
+
+### Windows 下
+
+下载线刷烧录工具：`AllwinnertechPhoeniSuitRelease20230905.zip`
+
+前往 https://www.aw-ol.com/downloads?cat=5
+
+找到 `AllwinnertechPhoeniSuitRelease20230905.zip` 并点击下载。下载需要全志在线账号，可以注册一个。
+
+![image-20240618214031711](assets/post/02-flash/image-20240618214031711.png)
+
+#### 安装驱动
+
+Windows 驱动下载地址：[https://www.aw-ol.com/downloads/resources/15](https://www.aw-ol.com/downloads/resources/15)，下载需要全志在线账号，可以注册一个。
+
+- 下载后解压 `UsbDriver` 到任意文件夹
+
+![image-20230329174037857](assets/post/02-flash/image-20230329174037857.png)
+
+- 右键此电脑，管理
+
+![image-20230329174138747](assets/post/02-flash/image-20230329174138747.png)
+
+- 链接待烧录的设备，并使设备进入下载模式，找到资源管理器里的`USB Device(VID_1f3a_PID_efe8)`
+
+![6fa8089e-5d2b-47f1-965f-9dcdf0c984da-image.png](assets/post/02-flash/1648732462492-6fa8089e-5d2b-47f1-965f-9dcdf0c984da-image.png)
+
+- 右键，更新驱动程序
+
+![f07e3def-dade-4069-8f1b-c4bbe2dc8078-image.png](assets/post/02-flash/1648732531793-f07e3def-dade-4069-8f1b-c4bbe2dc8078-image.png)
+
+- 浏览我的电脑查找
+
+![f38b617c-b68d-4aea-abba-2cbdf5e9ae29-image.png](assets/post/02-flash/1648732573134-f38b617c-b68d-4aea-abba-2cbdf5e9ae29-image.png)
+
+- 让我从计算机上的可用驱动列表中选取
+
+![f02c8901-55d1-47d2-ac13-fa3baf838fa8-image.png](assets/post/02-flash/1648732593215-f02c8901-55d1-47d2-ac13-fa3baf838fa8-image.png)
+
+- 从磁盘安装
+
+![43440003-9bbc-45d8-a4cd-36260a80bb0e-image.png](assets/post/02-flash/1648732623019-43440003-9bbc-45d8-a4cd-36260a80bb0e-image.png)
+
+- 浏览
+
+![2f99300d-cfd7-4aa4-b3aa-af1f893d3dae-image.png](assets/post/02-flash/1648732646080-2f99300d-cfd7-4aa4-b3aa-af1f893d3dae-image.png)
+
+- 选择刚才解压出来的文件夹中的`usbdrv.inf` 文件
+
+![8011100e-3e20-46a0-a4eb-c2bb372d6e6f-image.png](assets/post/02-flash/1648732680712-8011100e-3e20-46a0-a4eb-c2bb372d6e6f-image.png)
+
+- 确定
+
+![8b082aaf-20b3-4b7e-9a15-046a5db84e6a-image.png](assets/post/02-flash/1648732725713-8b082aaf-20b3-4b7e-9a15-046a5db84e6a-image.png)
+
+- 下一页
+
+![d0928686-ccbc-4ca4-b5f1-54ffc1edde5c-image.png](assets/post/02-flash/1648732741539-d0928686-ccbc-4ca4-b5f1-54ffc1edde5c-image.png)
+
+- 安装完成，关闭窗口
+
+![image-20240618215430503](assets/post/02-flash/image-20240618215430503.png)
+
+#### Windows 驱动常见问题
+
+- 问题：
+
+出现两个 USB Devices
+
+![6c485bb7-a1a2-4f6c-b275-3771fbb0f1ad-image.png](assets/post/02-flash/1660320391935-6c485bb7-a1a2-4f6c-b275-3771fbb0f1ad-image.png)
+
+解决方法：
+
+- 右键卸载设备
+- 勾选卸载驱动程序
+
+![image-20230329174851812](assets/post/02-flash/image-20230329174851812.png)
+
+- 重新安装一遍
+
+#### PhoenixSuit 全盘擦除
+
+- 打开PhoenixSuit
+- 点击浏览，选择固件
+- 点击全盘擦除升级
+
+![image-20240618214538655](assets/post/02-flash/image-20240618214538655.png)
+
+- 使用 USB 数据线连接 USB OTG （串口也可以连接，用于烧录查错）
+- 按住 `FEL` 键，然后点击 `RESET` 键重置开发板（这里以Avaota A1 为例）
+
+![image-20240618214725644](assets/post/02-flash/image-20240618214725644.png)
+
+- `RESET` 点击后 PhoenixSuit 会自动进入烧录模式，开始下载
+
+![image-20240618215107593](assets/post/02-flash/image-20240618215107593.png)
+
+烧录中
+
+![image-20240618215125042](assets/post/02-flash/image-20240618215125042.png)
+
+烧录完成
+
+![image-20240618215204705](assets/post/02-flash/image-20240618215204705.png)
+
+烧录 LOG
+
+```
+[968]fes begin commit:1cbb5ea8b3
+[972]periph0 has been enabled
+[975]set pll end
+[976]PL gpio voltage : 3.3V
+[980][pmu]: bus read error
+[983]PMU: AXP2202
+[987]PMU: AXP1530
+[990]power mode:33, sys_vol:920
+[993]vaild para:1  select dram para0
+[997]board init ok
+[998]beign to init dram
+[1001]DRAM BOOT DRIVE INFO: V0.67
+[1004]DRAM_VCC set to 1160 mv
+[1126]DRAM retraining ten
+[1247]DRAM retraining ten
+[1263][AUTO DEBUG]32bit,1 ranks training success!
+[1291]Soft Training Version: T2.0
+[5096][SOFT TRAINING] CLK=1200M Stable memtest pass
+[5100]DRAM CLK =1200 MHZ
+[5103]DRAM Type =8 (3:DDR3,4:DDR4,7:LPDDR3,8:LPDDR4)
+[5112]DRAM SIZE =2048 MBytes, para1 = 310a, para2 = 8000000, tpr13 = 6461
+[5120]DRAM simple test OK.
+[5123]init dram ok
 
 
+U-Boot 2018.07-g0aaed9e-dirty (Dec 14 2023 - 12:43:57 +0000) Allwinner Technology
+
+[07.377]CPU:   Allwinner Family
+[07.380]Model: sun55iw3
+I2C:   ready
+[07.390]DRAM:  512 MiB
+[07.395]Relocation Offset is: 15ecd000
+[07.428]secure enable bit: 0
+[07.432]PMU: AXP2202
+[07.433]PMU: pmu_axp2202 found
+[07.436]BMU: AXP2202
+[07.438]BMU: bmu_axp2202 found
+[07.441][AXP2202] comm status : 0x0 = 0x20, 0x1 = 0x90
+[07.446][AXP2202] onoff status: 0x20 = 0x4, 0x21 = 0x0
+[07.451][AXP2202] reboot/charge status: 0xf0 = 0x0
+[07.456]AXP2202_IIN_LIM:38
+[07.459]AXP2202_IIN_LIM:38
+[07.462]AXP2202_IIN_LIM:38
+[07.465]AXP2202_IIN_LIM:38
+[07.467]
+b12_mode: 0
+[07.470]AXP2202_IIN_LIM:38
+[07.472]gpio_bias, pc_bias: 1800, pc_supply: not set
+[07.477]gpio_bias, pl_bias:   -1, pl_supply: aldo3_vol
+[07.482]bldo1_vol = 0, onoff=0
+[07.486]bldo2_vol = 1800, onoff=1
+[07.489]bldo3_vol = 1800, onoff=1
+[07.493]cldo2_vol = 1800, onoff=1
+[07.496]cldo4_vol = 0, onoff=0
+bias_name:pc_bias        bias_vol:1800
+[07.503]bat not exist.
+[07.506]PMU: AXP1530
+[07.507]PMU_EXT: pmu_axp1530 found
+[07.511]CPU=1296 MHz,PLL6=600 Mhz,AHB=200 Mhz, APB1=100Mhz  MBus=600Mhz
+[07.517]gic: normal mode
+[07.520]sunxi flash type@0 not support fast burn key
+sunxi flash map init
+[07.527]init_clocks:finish
+[07.529]flash init start
+[07.531]workmode = 16,storage type = 0
+try card 2
+set card number 2
+get card number 2
+[07.539][mmc]: mmc driver ver uboot2018:2023-07-4 16:18:00
+[07.545][mmc]: Is not Boot mode!
+[07.548][mmc]: SUNXI SDMMC Controller Version:0x50500
+[07.559][mmc]: ************Try SD card 2************
+[07.564][mmc]: mmc 2 cmd timeout 100 status 100
+[07.568][mmc]: smc 2 err, cmd 8,  RTO
+[07.572][mmc]: mmc 2 close bus gating and reset
+[07.576][mmc]: mmc 2 cmd timeout 100 status 100
+[07.580][mmc]: smc 2 err, cmd 55,  RTO
+[07.584][mmc]: mmc 2 close bus gating and reset
+[07.588][mmc]: ************Try MMC card 2************
+[07.611][mmc]: mmc 2 cmd timeout 100 status 100
+[07.615][mmc]: smc 2 err, cmd 8,  RTO
+[07.618][mmc]: mmc 2 close bus gating and reset
+[07.623][mmc]: mmc 2 cmd timeout 100 status 100
+[07.627][mmc]: smc 2 err, cmd 55,  RTO
+[07.630][mmc]: mmc 2 close bus gating and reset
+[07.647][mmc]: gen_tuning_blk_bus8: total blk 10
+[07.651][mmc]: gen_tuning_blk_bus4: total blk 6
+[07.655][mmc]: Using 8 bit tuning now
+[07.660][mmc]: write_tuning_try_freq: write ok
+[07.664][mmc]: Pattern compare ok
+[07.667][mmc]: Write tuning pattern ok
+[07.670][mmc]: ================== HSSDR52_SDR25...
+[07.675][mmc]: skip freq 400000
+[07.678][mmc]: skip freq 25000000
+[07.681][mmc]: freq: 2-50000000-64-4
+[07.880][mmc]: [0-63|64]
+[07.883][mmc]: ================== HS200_SDR104...
+[07.888][mmc]: skip freq 400000
+[07.890][mmc]: skip freq 25000000
+[07.893][mmc]: freq: 2-50000000-64-4
+[08.083][mmc]: freq: 3-100000000-64-4
+[08.216][mmc]: freq: 4-150000000-64-4
+[08.325][mmc]: skip freq 200000000
+[08.328][mmc]: [0-63|64]
+[08.330][mmc]: [0-63|64]
+[08.333][mmc]: [0-8|9] [13-63|51]
+[08.336][mmc]: ================== HSDDR52_DDR50...
+[08.341][mmc]: skip freq 400000
+[08.344][mmc]: freq: 1-25000000-64-4
+[08.534][mmc]: freq: 2-50000000-64-4
+[08.666][mmc]: [0-63|64]
+[08.668][mmc]: [0-42|43] [44-63|20]
+[08.671][mmc]: ================== HS400...
+[08.676][mmc]: skip freq 400000
+[08.679][mmc]: skip freq 25000000
+[08.682][mmc]: freq: 2-50000000
+[08.698][mmc]: freq: 3-100000000
+[08.713][mmc]: freq: 4-150000000
+[08.727][mmc]: skip freq 200000000
+[08.730][mmc]: speed mode: HS400
+[08.733][mmc]: [0-63|64]
+[08.736][mmc]: [0-63|64]
+[08.738][mmc]: [0-9|10] [12-63|52]
+[08.741][mmc]: skip freq 400000
+[08.744][mmc]: skip freq 25000000
+[08.747][mmc]: freq: 2-50000000-64-4
+[08.880][mmc]: freq: 3-100000000-64-4
+[08.942][mmc]: freq: 4-150000000-64-4
+[08.978][mmc]: skip freq 200000000
+[08.981][mmc]: [1-63|63]
+[08.983][mmc]: [2-36|35]
+[08.986][mmc]: [2-21|20]
+[08.990][mmc]: DS26/SDR12: 0xffffffff 0xffffffff
+[08.994][mmc]: HSSDR52/SDR25: 0xff20ffff 0xffffffff
+[08.999][mmc]: HSDDR52/DDR50: 0xff1520ff 0xffffffff
+[09.003][mmc]: HS200/SDR104: 0x2020ffff 0xffffff26
+[09.008][mmc]: HS400: 0x1320ffff 0xffffff0c
+[09.012][mmc]: HS400: 0x2020ffff 0xffffff26
+[09.017][mmc]: Best spd md: 4-HS400, freq: 4-150000000, Bus width: 8
+[09.023]Loading Environment from SUNXI_FLASH... OK
+[09.027]try to burn key
+[09.029]out of usb burn from boot: not boot mode
+Hit any key to stop autoboot:  0
+sunxi work mode=0x10
+run usb efex
+buf queue page size = 65536
+delay time 2500
+weak:otg_phy_config
+usb init ok
+set address 0x4e
+set address 0x4e ok
+SUNXI_EFEX_ERASE_TAG
+erase_flag = 0x12
+origin_erase_flag = 0x1
+FEX_CMD_fes_verify_status
+FEX_CMD_fes_verify last err=0
+the 0 mbr table is ok
+the 1 mbr table is ok
+the 2 mbr table is ok
+the 3 mbr table is ok
+*************MBR DUMP***************
+total mbr part 28
+
+part[0] name      :bootloader_a
+part[0] classname :DISK
+part[0] addrlo    :0x8000
+part[0] lenlo     :0x10000
+part[0] user_type :32768
+part[0] keydata   :0
+part[0] ro        :0
+
+part[1] name      :bootloader_b
+part[1] classname :DISK
+part[1] addrlo    :0x18000
+part[1] lenlo     :0x10000
+part[1] user_type :32768
+part[1] keydata   :0
+part[1] ro        :0
+
+part[2] name      :env_a
+part[2] classname :DISK
+part[2] addrlo    :0x28000
+part[2] lenlo     :0x200
+part[2] user_type :32768
+part[2] keydata   :0
+part[2] ro        :0
+
+part[3] name      :env_b
+part[3] classname :DISK
+part[3] addrlo    :0x28200
+part[3] lenlo     :0x200
+part[3] user_type :32768
+part[3] keydata   :0
+part[3] ro        :0
+
+part[4] name      :boot_a
+part[4] classname :DISK
+part[4] addrlo    :0x28400
+part[4] lenlo     :0x20000
+part[4] user_type :32768
+part[4] keydata   :0
+part[4] ro        :0
+
+part[5] name      :boot_b
+part[5] classname :DISK
+part[5] addrlo    :0x48400
+part[5] lenlo     :0x20000
+part[5] user_type :32768
+part[5] keydata   :0
+part[5] ro        :0
+
+part[6] name      :vendor_boot_a
+part[6] classname :DISK
+part[6] addrlo    :0x68400
+part[6] lenlo     :0x10000
+part[6] user_type :32768
+part[6] keydata   :0
+part[6] ro        :0
+
+part[7] name      :vendor_boot_b
+part[7] classname :DISK
+part[7] addrlo    :0x78400
+part[7] lenlo     :0x10000
+part[7] user_type :32768
+part[7] keydata   :0
+part[7] ro        :0
+
+part[8] name      :init_boot_a
+part[8] classname :DISK
+part[8] addrlo    :0x88400
+part[8] lenlo     :0x4000
+part[8] user_type :32768
+part[8] keydata   :0
+part[8] ro        :0
+
+part[9] name      :init_boot_b
+part[9] classname :DISK
+part[9] addrlo    :0x8c400
+part[9] lenlo     :0x4000
+part[9] user_type :32768
+part[9] keydata   :0
+part[9] ro        :0
+
+part[10] name      :super
+part[10] classname :DISK
+part[10] addrlo    :0x90400
+part[10] lenlo     :0x700000
+part[10] user_type :32768
+part[10] keydata   :0
+part[10] ro        :0
+
+part[11] name      :misc
+part[11] classname :DISK
+part[11] addrlo    :0x790400
+part[11] lenlo     :0x8000
+part[11] user_type :32768
+part[11] keydata   :0
+part[11] ro        :0
+
+part[12] name      :vbmeta_a
+part[12] classname :DISK
+part[12] addrlo    :0x798400
+part[12] lenlo     :0x100
+part[12] user_type :32768
+part[12] keydata   :0
+part[12] ro        :0
+
+part[13] name      :vbmeta_b
+part[13] classname :DISK
+part[13] addrlo    :0x798500
+part[13] lenlo     :0x100
+part[13] user_type :32768
+part[13] keydata   :0
+part[13] ro        :0
+
+part[14] name      :vbmeta_system_a
+part[14] classname :DISK
+part[14] addrlo    :0x798600
+part[14] lenlo     :0x80
+part[14] user_type :32768
+part[14] keydata   :0
+part[14] ro        :0
+
+part[15] name      :vbmeta_system_b
+part[15] classname :DISK
+part[15] addrlo    :0x798680
+part[15] lenlo     :0x80
+part[15] user_type :32768
+part[15] keydata   :0
+part[15] ro        :0
+
+part[16] name      :vbmeta_vendor_a
+part[16] classname :DISK
+part[16] addrlo    :0x798700
+part[16] lenlo     :0x80
+part[16] user_type :32768
+part[16] keydata   :0
+part[16] ro        :0
+
+part[17] name      :vbmeta_vendor_b
+part[17] classname :DISK
+part[17] addrlo    :0x798780
+part[17] lenlo     :0x80
+part[17] user_type :32768
+part[17] keydata   :0
+part[17] ro        :0
+
+part[18] name      :frp
+part[18] classname :DISK
+part[18] addrlo    :0x798800
+part[18] lenlo     :0x400
+part[18] user_type :32768
+part[18] keydata   :32768
+part[18] ro        :0
+
+part[19] name      :empty
+part[19] classname :DISK
+part[19] addrlo    :0x798c00
+part[19] lenlo     :0x7800
+part[19] user_type :32768
+part[19] keydata   :0
+part[19] ro        :0
+
+part[20] name      :metadata
+part[20] classname :DISK
+part[20] addrlo    :0x7a0400
+part[20] lenlo     :0x8000
+part[20] user_type :32768
+part[20] keydata   :0
+part[20] ro        :0
+
+part[21] name      :treadahead
+part[21] classname :DISK
+part[21] addrlo    :0x7a8400
+part[21] lenlo     :0x30000
+part[21] user_type :32768
+part[21] keydata   :0
+part[21] ro        :0
+
+part[22] name      :private
+part[22] classname :DISK
+part[22] addrlo    :0x7d8400
+part[22] lenlo     :0x8000
+part[22] user_type :32768
+part[22] keydata   :0
+part[22] ro        :0
+
+part[23] name      :dtbo_a
+part[23] classname :DISK
+part[23] addrlo    :0x7e0400
+part[23] lenlo     :0x1000
+part[23] user_type :32768
+part[23] keydata   :0
+part[23] ro        :0
+
+part[24] name      :dtbo_b
+part[24] classname :DISK
+part[24] addrlo    :0x7e1400
+part[24] lenlo     :0x1000
+part[24] user_type :32768
+part[24] keydata   :0
+part[24] ro        :0
+
+part[25] name      :media_data
+part[25] classname :DISK
+part[25] addrlo    :0x7e2400
+part[25] lenlo     :0x8000
+part[25] user_type :32768
+part[25] keydata   :0
+part[25] ro        :0
+
+part[26] name      :Reserve0
+part[26] classname :DISK
+part[26] addrlo    :0x7ea400
+part[26] lenlo     :0x20000
+part[26] user_type :32768
+part[26] keydata   :0
+part[26] ro        :0
+
+part[27] name      :UDISK
+part[27] classname :DISK
+part[27] addrlo    :0x80a400
+part[27] lenlo     :0x0
+part[27] user_type :33024
+part[27] keydata   :0
+part[27] ro        :0
+
+[12.331]erase all part start
+need erase flash: 18
+[12.336][mmc]: erase from: 0, to: 30777343, cnt: 30777344, erase_group: 1024
+[12.357][mmc]: sunxi_mmc_do_send_cmd_common: cmd 38 wait rsp busy 0xd ms
+[12.363]read item0 copy0
+[12.372]Item0 (Map) magic is bad
+[12.375]the secure storage item0 copy0 magic is bad
+[12.386]Item0 (Map) magic is bad
+[12.389]the secure storage item0 copy1 magic is bad
+[12.394]Item0 (Map) magic is bad
+[12.397]the secure storage map is empty
+[12.415]erase secure storage: 0 ok
+SUNXI_EFEX_MBR_TAG
+mbr size = 0x10000
+write primary GPT success
+write Backup GPT success
+[12.428]update partition map
+FEX_CMD_fes_verify_status
+FEX_CMD_fes_verify last err=0
+******Has init
+FEX_CMD_fes_verify_value, start 0x8000, size high 0x0:low 0x1547400
+FEX_CMD_fes_verify_value 0xf81e1df7
+FEX_CMD_fes_verify_value, start 0x28000, size high 0x0:low 0x20000
+FEX_CMD_fes_verify_value 0xc0274a86
+FEX_CMD_fes_verify_value, start 0x28400, size high 0x0:low 0x4000000
+FEX_CMD_fes_verify_value 0xe79e98ca
+FEX_CMD_fes_verify_value, start 0x68400, size high 0x0:low 0x2000000
+FEX_CMD_fes_verify_value 0x10e5ddbd
+FEX_CMD_fes_verify_value, start 0x88400, size high 0x0:low 0x800000
+FEX_CMD_fes_verify_value 0xcf78c338
+FEX_CMD_fes_verify_value, start 0x790400, size high 0x0:low 0x1000000
+FEX_CMD_fes_verify_value 0xb961f417
+FEX_CMD_fes_verify_value, start 0x798400, size high 0x0:low 0x2000
+FEX_CMD_fes_verify_value 0x813685b5
+FEX_CMD_fes_verify_value, start 0x798600, size high 0x0:low 0x1000
+FEX_CMD_fes_verify_value 0xa134d882
+FEX_CMD_fes_verify_value, start 0x798700, size high 0x0:low 0x1000
+FEX_CMD_fes_verify_value 0x7639a7d0
+FEX_CMD_fes_verify_value, start 0x7e0400, size high 0x0:low 0x200000
+FEX_CMD_fes_verify_value 0xfe36f02b
+FEX_CMD_fes_verify_value, start 0x7ea400, size high 0x0:low 0x1000000
+FEX_CMD_fes_verify_value 0x0
+bootfile_mode=4
+SUNXI_EFEX_BOOT1_TAG
+boot1 size = 0x14c000, max size = 0x400000
+uboot size = 0x14c000
+storage type = 2
+FEX_CMD_fes_verify_status
+FEX_CMD_fes_verify last err=0
+bootfile_mode=4
+SUNXI_EFEX_BOOT0_TAG
+boot0 size = 0x11000
+[56.377][mmc]: write mmc 2 info ok
+storage type = 2
+FEX_CMD_fes_verify_status
+FEX_CMD_fes_verify last err=0
+sunxi_efex_next_action=2
+exit usb
+next work 2
+```
+
+#### PhoenixSuit 单独分区烧录
+
+在开发的时候，会遇到只需要烧录单独分区的情况，例如只修改了内核的固件，不需要全盘下载。就可以选择单独分区烧录功能。
+
+-  选择单或多分区下载，PhoenixSuit 会解析固件并生成分区表
+-  选择需要下载的固件
+
+![image-20240618214810240](assets/post/02-flash/image-20240618214810240.png)
