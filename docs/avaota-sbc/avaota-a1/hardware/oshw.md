@@ -7,22 +7,22 @@
 ## 相关资源
 
 - AvaotaA1 使用的 8 层 LPDDR4 模板：
-  - SCH：https://github.com/AvaotaSBC/Avaota-A1/tree/main/resource/dram_8l/01_SCH
-  - PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/main/resource/dram_8l/02_PCB
-  - 工程文件：https://github.com/AvaotaSBC/Avaota-A1/tree/main/resource/dram_8l/03_EDA
-  - 转换后的AD工程：https://github.com/AvaotaSBC/Avaota-A1/tree/main/resource/dram_8l/04_ADPCB
+  - SCH：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/dram_8l01_SCH
+  - PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/dram_8l02_PCB
+  - 工程文件：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/dram_8l03_EDA
+  - 转换后的AD工程：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/dram_8l04_ADPCB
 
 ![image-20240606114748708](assets/post/oshw/image-20240606114748708.png)
 
 - AvaotaA1 未使用的 4 层 LPDDR4 模板：
-  - SCH：https://github.com/AvaotaSBC/Avaota-A1/tree/main/resource/dram_4l/01_SCH
-  - PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/main/resource/dram_4l/02_PCB
-  - 工程文件：https://github.com/AvaotaSBC/Avaota-A1/tree/main/resource/dram_4l/03_EDA
-  - 转换后的AD工程：https://github.com/AvaotaSBC/Avaota-A1/tree/main/resource/dram_4l/04_ADPCB
+  - SCH：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/dram_4l01_SCH
+  - PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/dram_4l02_PCB
+  - 工程文件：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/dram_4l03_EDA
+  - 转换后的AD工程：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/dram_4l04_ADPCB
 
 ![image-20240606114735243](assets/post/oshw/image-20240606114735243.png)
 
-- IBIS 仿真数据：https://github.com/AvaotaSBC/Avaota-A1/tree/main/resource/ibis
+- IBIS 仿真数据：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/ibis
 
 ## v1.4 版本
 
@@ -33,14 +33,14 @@
 
 ### 相关资料
 
-- 原理图：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.4/01_SCH
-- PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.4/02_PCB
-- GERBER：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.4/03_GERBER
-- BOM：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.4/04_BOM
-- 点位：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.4/05_PICKANDPLACE
-- 3D：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.4/06_3D
-- AD转换版PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.4/07_ADPCB
-- EasyEDA工程：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.4/08_JLCEDA
+- 原理图：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.4/01_SCH
+- PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.4/02_PCB
+- GERBER：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.4/03_GERBER
+- BOM：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.4/04_BOM
+- 点位：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.4/05_PICKANDPLACE
+- 3D：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.4/06_3D
+- AD转换版PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.4/07_ADPCB
+- EasyEDA工程：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.4/08_JLCEDA
 
 ## v1.3 版本
 
@@ -59,24 +59,24 @@
 
 ### 相关资料
 
-- 原理图：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.3/01_SCH
-- PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.3/02_PCB
-- GERBER：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.3/03_GERBER
-- BOM：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.3/04_BOM
-- 点位：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.3/05_PICKANDPLACE
-- 3D：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.3/06_3D
-- AD转换版PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.3/07_ADPCB
-- EasyEDA工程：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.3/08_JLCEDA
+- 原理图：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.3/01_SCH
+- PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.3/02_PCB
+- GERBER：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.3/03_GERBER
+- BOM：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.3/04_BOM
+- 点位：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.3/05_PICKANDPLACE
+- 3D：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.3/06_3D
+- AD转换版PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.3/07_ADPCB
+- EasyEDA工程：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.3/08_JLCEDA
 
 ## v1.2 版本
 
 ### 相关资料
 
-- 原理图：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.2/01_SCH
-- PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.2/02_PCB
-- GERBER：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.2/03_GERBER
-- BOM：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.2/04_BOM
-- AD转换PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/main/hardware/v1.2/06_ADPCB
+- 原理图：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.2/01_SCH
+- PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.2/02_PCB
+- GERBER：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.2/03_GERBER
+- BOM：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.2/04_BOM
+- AD转换PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.2/06_ADPCB
 
 ## 物料支持列表
 
