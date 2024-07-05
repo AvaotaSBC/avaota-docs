@@ -33,6 +33,35 @@ Avaota Hyper Card Reader 板载 STC8G1K08-36I-DFN8 微控制器作为电源管�
 
 - Avaota Hyper Card Reader 模块
 - Avaota Debugger 模块
+
+#### 使用刷写器刷写固件
+
+这里我们提供了刷写器，方便进行量产刷写固件：
+
+- [AvaotaHyperCardFirmwareTool_v1.0.zip](https://github.com/AvaotaSBC/AvaotaHyperCard/releases/download/1.0/AvaotaHyperCardFirmwareTool_v1.0.zip)
+
+下载后打开，选择刷写使用的串口，这里自动识别到 `COM14`
+
+![image-20240706003831902](assets/post/hypercard/image-20240706003831902.png)
+
+点击 `Prog` 按钮
+
+![image-20240706003907396](assets/post/hypercard/image-20240706003907396.png)
+
+此时 Avaota Debugger 灯闪。将 Avaota Debugger 的背面朝上，使用连接线插入正面朝上的 Avaota Hyper Card Reader，方向如图所示：
+
+![image-20240705205837998](assets/post/hypercard/image-20240705205837998.png)
+
+看到 `Complete !` 即刷写完成。
+
+
+
+![image-20240706003957855](assets/post/hypercard/image-20240706003957855.png)
+
+#### 使用 STC-ISP 刷写固件
+
+固件也可以使用 STC-ISP 进行刷写，需要准备这两个东西：
+
 - [Avaota Hyper Card Reader 固件](https://github.com/AvaotaSBC/AvaotaHyperCard/tree/main/Firmware)
 - [STC-ISP 下载器](https://www.stcmicro.com/rjxz.html)
 
