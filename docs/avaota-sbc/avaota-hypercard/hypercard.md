@@ -12,6 +12,12 @@ Avaota Hyper Card 系列是一个方便开发者开发的套件系列，包括 A
 
 ## Avaota Hyper Card Reader
 
+:::info
+
+Avaota Hyper Card Reader 使用 CERN-OHL-P-2.0 协议开源
+
+:::
+
 ![image-20240706143554986](assets/post/hypercard/image-20240706143554986.png)
 
 Avaota Hyper Card Reader 是专为解决开发过程中频繁拔插读卡器烧录系统而设计的先进设备。在开发和测试嵌入式系统时，经常需要使用读卡器进行固件烧录、数据交换或配置更新。然而，传统的读卡器经常需要物理插拔，这不仅浪费时间，还容易导致连接不稳定或损坏设备接口的风险。
