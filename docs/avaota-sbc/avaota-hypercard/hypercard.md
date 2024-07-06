@@ -2,6 +2,8 @@
 
 Avaota Hyper Card 系列是一个方便开发者开发的套件系列，包括 Avaota Hyper Card Reader，Avaota Hyper Card Connector。
 
+![20240706211300](assets/post/hypercard/20240706211300.jpg)
+
 ## Avaota Hyper Card 系列硬件设计
 
 - 原理图：https://github.com/AvaotaSBC/AvaotaHyperCard/tree/main/Hardware/01_SCH
