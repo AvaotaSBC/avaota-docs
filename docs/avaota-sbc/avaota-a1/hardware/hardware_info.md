@@ -8,6 +8,14 @@
 
 ![d13da8d7ca5b38d69c21b34fb0fc95f](./assets/hardware_info/d13da8d7ca5b38d69c21b34fb0fc95f.jpg)
 
+## 购买链接
+
+- [全志T527 Avaota A1 8核A55](https://detail.tmall.com/item.htm?&id=796901435546)
+- [Type-C SUB 调试器](https://detail.tmall.com/item.htm?&id=796901435546)
+- [散热器](https://detail.tmall.com/item.htm?&id=796901435546)
+- [RGB散热器](https://detail.tmall.com/item.htm?&id=796901435546)
+- [配套7寸RGB屏幕](https://detail.tmall.com/item.htm?&id=796901435546)
+
 ## 参数规格
 
 Avaota-A1 - A Powerful SBC with Allwinner T527 Octa-Core A55 SoC
