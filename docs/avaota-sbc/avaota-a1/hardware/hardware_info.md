@@ -239,6 +239,10 @@ Avaota-A1 - A Powerful SBC with Allwinner T527 Octa-Core A55 SoC
     <td>19 x PWM</td>
    </tr>
   </tbody></table>
+## GPIO 功能
+
+![20240805202244](assets/post/hardware_info/20240805202244.jpg)
+
 ## DC 插孔规格
 
 ![329857713-fb174738-ef40-4ae3-8f91-66f9f043a859](assets/hardware_info/329857713-fb174738-ef40-4ae3-8f91-66f9f043a859.png)
