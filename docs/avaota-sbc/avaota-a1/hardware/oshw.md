@@ -11,6 +11,11 @@
   - PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/dram_8l/02_PCB
   - 工程文件：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/dram_8l/03_EDA
   - 转换后的AD工程：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/dram_8l/04_ADPCB
+- 国内镜像
+  - SCH：https://gitee.com/avaotasbc/avaota-a1/tree/master/resource/dram_8l/01_SCH
+  - PCB：https://gitee.com/avaotasbc/avaota-a1/tree/master/resource/dram_8l/02_PCB
+  - 工程文件：https://gitee.com/avaotasbc/avaota-a1/tree/master/resource/dram_8l/03_EDA
+  - 转换后的AD工程：https://gitee.com/avaotasbc/avaota-a1/tree/master/resource/dram_8l/04_ADPCB
 
 ![image-20240606114748708](assets/post/oshw/image-20240606114748708.png)
 
@@ -19,10 +24,61 @@
   - PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/dram_4l/02_PCB
   - 工程文件：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/dram_4l/03_EDA
   - 转换后的AD工程：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/dram_4l/04_ADPCB
+- 国内镜像
+  - SCH：https://gitee.com/avaotasbc/avaota-a1/tree/master/resource/dram_4l/01_SCH
+    - PCB：https://gitee.com/avaotasbc/avaota-a1/tree/master/resource/dram_4l/02_PCB
+    - 工程文件：https://gitee.com/avaotasbc/avaota-a1/tree/master/resource/dram_4l/03_EDA
+    - 转换后的AD工程：https://gitee.com/avaotasbc/avaota-a1/tree/master/resource/dram_4l/04_ADPCB
+
 
 ![image-20240606114735243](assets/post/oshw/image-20240606114735243.png)
 
 - IBIS 仿真数据：https://github.com/AvaotaSBC/Avaota-A1/tree/master/resource/ibis
+- 国内镜像
+  - IBIS 仿真数据：https://gitee.com/avaotasbc/avaota-a1/tree/master/resource/ibis
+
+
+## v1.6 版本
+
+### 更新记录
+
+1. **Fix SoC 3V3 Digital power domain error !!important**
+2. Add Dioid for USB VBUS to Avoid Power switch abnormal working
+3. Modify HDMI reference layer
+4. Modify RF reference layer
+
+### 相关资料
+
+- 原理图：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.6/01_SCH
+- PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.6/02_PCB
+- GERBER：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.6/03_GERBER
+- BOM：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.6/04_BOM
+- 点位：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.6/05_PICKANDPLACE
+- 3D：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.6/06_3D
+- AD转换版PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.6/07_ADPCB
+- EasyEDA工程：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.6/08_JLCEDA
+- 国内镜像
+  - 原理图：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.6/01_SCH
+  - PCB：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.6/02_PCB
+  - GERBER：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.6/03_GERBER
+  - BOM：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.6/04_BOM
+  - 点位：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.6/05_PICKANDPLACE
+  - 3D：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.6/06_3D
+  - AD转换版PCB：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.6/07_ADPCB
+  - EasyEDA工程：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.6/08_JLCEDA
+
+## v1.5 版本 PINE64 修改
+
+### 更新记录
+
+1. Modify R30 to 4K3, R33 to 6K8 to Support boot from SPI NOR in PJ bank
+2. Mount SPI NOR
+
+### 相关资料
+
+- 原理图：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.5/01_SCH	
+- 国内镜像
+  - 原理图：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.5/01_SCH
 
 ## v1.4 版本
 
@@ -41,6 +97,16 @@
 - 3D：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.4/06_3D
 - AD转换版PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.4/07_ADPCB
 - EasyEDA工程：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.4/08_JLCEDA
+- 国内镜像
+  - 原理图：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.4/01_SCH
+  - PCB：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.4/02_PCB
+  - GERBER：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.4/03_GERBER
+  - BOM：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.4/04_BOM
+  - 点位：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.4/05_PICKANDPLACE
+  - 3D：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.4/06_3D
+  - AD转换版PCB：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.4/07_ADPCB
+  - EasyEDA工程：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.4/08_JLCEDA
+
 
 ## v1.3 版本
 
@@ -67,6 +133,16 @@
 - 3D：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.3/06_3D
 - AD转换版PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.3/07_ADPCB
 - EasyEDA工程：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.3/08_JLCEDA
+- 国内镜像
+  - 原理图：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.3/01_SCH
+  - PCB：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.3/02_PCB
+  - GERBER：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.3/03_GERBER
+  - BOM：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.3/04_BOM
+  - 点位：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.3/05_PICKANDPLACE
+  - 3D：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.3/06_3D
+  - AD转换版PCB：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.3/07_ADPCB
+  - EasyEDA工程：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.3/08_JLCEDA
+
 
 ## v1.2 版本
 
@@ -77,6 +153,13 @@
 - GERBER：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.2/03_GERBER
 - BOM：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.2/04_BOM
 - AD转换PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.2/06_ADPCB
+- 国内镜像
+  - 原理图：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.2/01_SCH
+  - PCB：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.2/02_PCB
+  - GERBER：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.2/03_GERBER
+  - BOM：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.2/04_BOM
+  - AD转换PCB：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.2/06_ADPCB
+
 
 ## 物料支持列表
 
