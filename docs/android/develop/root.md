@@ -1,4 +1,4 @@
-# APP 启用 ROOT 
+# Android APP 启用 ROOT 
 
 在默认情况下，Android 13 并未开启 ROOT 功能，如需要启用 ROOT 需要做如下修改：
 
@@ -38,7 +38,7 @@ static void DropCapabilitiesBoundingSet(fail_fn_t fail_fn) {
 
 找到 `SelinuxSetEnforcement` 函数，配置 `is_enforcing` 为 `false`
 
-![image-20240820221624091](assets/post/root/image-20240820221624091.png)
+![image-20240820222811611](assets/post/root/image-20240820222811611.png)
 
 - `system/core/libcutils/fs_config.cpp`
 
