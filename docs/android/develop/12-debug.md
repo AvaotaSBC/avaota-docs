@@ -1,6 +1,6 @@
-## Android 调试 debug
+# Android 调试 debug
 
-### 将logcat和dmesg信息保存到文件系统
+## 将logcat和dmesg信息保存到文件系统
 
 为了调试方便，可以在开发调试阶段将系统的logcat和内核log自动保存到data分区文件系统上，这种方法可以方便调试偶发问题，log保存在/data/media/awlog目录。
 
@@ -22,11 +22,11 @@ AOSP计算器默认隐藏，打开方式为Settings->About tablet,点击5次Vers
 
 :::
 
-### 生成debug固件
+## 生成debug固件
 
 编译android后，pack -d即可生成debug固件，该固件将串口引入卡口打印出来，配合配套的工具即可实时查看log信息。
 
-### 使用fastboot
+## 使用fastboot
 
 获取fastboot工具。
 

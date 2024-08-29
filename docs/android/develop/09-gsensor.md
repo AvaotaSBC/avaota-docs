@@ -2,8 +2,6 @@
 
 配置文件目录：`longan/device/config/chips/{IC}/configs/{BOARD}/board.dts`。
 
-![gsensor](assets/post/09-gsensor/gsensor.png)
-
 ### Android层配置修改
 
 以bma250为例。

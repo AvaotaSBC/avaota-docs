@@ -98,7 +98,7 @@ longan/
 
 ### SDK常用的编译命令和编译步骤介绍
 
-步骤1，进行sdk环境配置，详细看下一节
+步骤1，进行sdk环境配置
 
 ```shell
 ./build.sh config
@@ -146,7 +146,7 @@ longan常见编译打包命令如下所示：
 
 |          | 命令                  | 用法说明                                                     |
 | :------: | --------------------- | :----------------------------------------------------------- |
-| 整体编译 | ./build.sh config     | 1. 编译配置，然后弹出配置选择<br>2. 作用是找到对应的BoardConfig.mk文件，并且配置部分参数 |
+| 整体编译 | ./build.sh config     | 1. 编译配置，然后弹出配置选择 2. 作用是找到对应的BoardConfig.mk文件，并且配置部分参数 |
 | 整体编译 | ./build.sh            | 编译命令，编译kernel                                         |
 | 局部编译 | ./build.sh bootloader | 编译boot0、uboot、efex                                       |
 | 局部编译 | ./build.sh kernel     | 编译kernel                                                   |
