@@ -29,18 +29,16 @@ Android overlay 机制允许在不修改apk或者framework源代码的情况下�
 
 有两种不同的overlay目录定义。
 
-1. PRODUCT_PACKAGE_OVERLAYS  
-   用于指定产品。
-2. DEVICE_PACKAGE_OVERLAYS  
-   用于同一设备模型的一系列产品。
+1. `PRODUCT_PACKAGE_OVERLAYS`    用于指定产品。
+2. `DEVICE_PACKAGE_OVERLAYS`   用于同一设备模型的一系列产品。
 
-如果包含同一资源，那么PRODUCT_PACKAGE_OVERLAYS的内容 将覆盖DEVICE_PACKAGE_OVERLAYS中的内容 。如果要定义多个overlays目录，需要用空格隔开，同一资源的定义，将使用先定义的目录中的资源。
+如果包含同一资源，那么 `PRODUCT_PACKAGE_OVERLAYS` 的内容 将覆盖`DEVICE_PACKAGE_OVERLAYS` 中的内容 。如果要定义多个overlays目录，需要用空格隔开，同一资源的定义，将使用先定义的目录中的资源。
 
-在方案目录下创建common/overlay和{device-name}/overlay目录，分别用于device通用及product使用的overlay文件夹。  
+在方案目录下创建 `common/overlay` 和 `{device-name}/overlay` 目录，分别用于 `device` 通用及 `product` 使用的 `overlay` 文件夹。  
 
 ### 改变mk文件来添加overlays的编译项
 
-    在文件common/overlay/config.mk和{device-name}/overlay/config.mk中分别添加。
+在文件 `common/overlay/config.mk` 和 `{device-name}/overlay/config.mk`中分别添加。
 
 ```
 DEVICE_PACKAGE_OVERLAYS := \
