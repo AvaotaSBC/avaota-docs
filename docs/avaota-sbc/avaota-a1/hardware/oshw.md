@@ -37,6 +37,32 @@
 - 国内镜像
   - IBIS 仿真数据：https://gitee.com/avaotasbc/avaota-a1/tree/master/resource/ibis
 
+## v1.7 版本
+
+### 更新记录
+
+1. Modify DP to top layer
+2. Optimized impedance
+
+### 相关资料
+
+- 原理图：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.7/01_SCH
+- PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.7/02_PCB
+- GERBER：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.7/03_GERBER
+- BOM：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.7/04_BOM
+- 点位：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.7/05_PICKANDPLACE
+- 3D：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.7/06_3D
+- AD转换版PCB：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.7/07_ADPCB
+- EasyEDA工程：https://github.com/AvaotaSBC/Avaota-A1/tree/master/hardware/v1.7/08_JLCEDA
+- 国内镜像
+  - 原理图：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.7/01_SCH
+  - PCB：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.7/02_PCB
+  - GERBER：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.7/03_GERBER
+  - BOM：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.7/04_BOM
+  - 点位：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.7/05_PICKANDPLACE
+  - 3D：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.7/06_3D
+  - AD转换版PCB：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.7/07_ADPCB
+  - EasyEDA工程：https://gitee.com/avaotasbc/avaota-a1/tree/master/hardware/v1.7/08_JLCEDA
 
 ## v1.6 版本
 
