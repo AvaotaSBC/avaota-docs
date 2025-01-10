@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Avaota SBC
 
-![320177610-2e939779-c2d5-450b-a396-6891ab628522](assets/index/320177610-2e939779-c2d5-450b-a396-6891ab628522.png)
+![avaota](assets/post/index/avaota.png)
 
 Avaota SBC 致力于推动硬件和软件集成的开源生态系统，提供从入门级到高性能的开源单板计算机（single-board computers SBC）。
 
