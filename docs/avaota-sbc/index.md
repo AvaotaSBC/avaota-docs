@@ -56,6 +56,20 @@ CERN Open Hardware Licence Version 2 - Weakly Reciprocal许可证为硬件设计
 
 ![AvaotaM1](assets/post/index/AvaotaM1.jpg)
 
+### Avaota F 系列
+
+Avaota F 系列提供极致的最小系统板，方便快速验证开发，灵活的组合产品开发。Avaota F 系列无固定形态，依据功能而定。
+
+:::note
+
+Avaota F 系列硬件设计均采用 [CERN-OHL-S](https://cern-ohl.web.cern.ch/) 开源许可。
+
+CERN-OHL-S（CERN Open Hardware License - Strongly Reciprocal）是一种由欧洲核子研究组织（CERN）开发的开源硬件许可证。它是CERN-OHL许可证的一个变体，其目的是促进硬件设计的共享和开放，以鼓励创新和合作。与许多其他开源许可证不同，CERN-OHL-S有着更严格的互惠条款，要求在对硬件设计进行修改时必须以相同的许可证方式发布修改后的设计。这意味着对CERN-OHL-S许可的硬件设计进行修改后，必须以相同的许可证方式分享修改后的设计，从而确保了硬件设计的开放性和可持续性。
+
+:::
+
+![AvaotaF1](assets/post/index/AvaotaF1.jpg)
+
 ### Avaota 配件系列
 
 Avaota 配件系列提供基础外设配套配件，包括调试器，修改工具，模块等。
