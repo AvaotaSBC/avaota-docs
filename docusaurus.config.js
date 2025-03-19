@@ -122,7 +122,7 @@ const config = {
             },
             footer: {
                 style: 'dark',
-                copyright: `Copyright © AvaotaSBC Team. ${new Date().getFullYear()}. Built BUILDCOMMIT with Docusaurus.`,
+                copyright: `Copyright © AvaotaSBC Team. ${new Date().getFullYear()}. Built BUILDCOMMIT with Docusaurus.<br/><a href="https://beian.miit.gov.cn/">滇ICP备19005195号-3</a>`,
             },
             prism: {
                 theme: prismThemes.github,
